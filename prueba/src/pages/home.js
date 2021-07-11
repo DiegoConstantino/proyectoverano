@@ -1,11 +1,13 @@
-import react from "react";
-import menu from "../components/menu/menu";
-function home() {
+import React from 'react';
+import Menu from '../components/menu/Menu';
+import Carousel from '../components/carousel/Carousel';
+function Home() {
   return (
     <div>
-      <menu></menu>
+      <Menu></Menu>
+      <Carousel></Carousel>
     </div>
   );
 }
 
-export default home;
+export default Home;

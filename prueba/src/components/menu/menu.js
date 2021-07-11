@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 
-function menu () {
-    return (
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+function Menu() {
+  return (
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          Navbar
+          Bos Taurus App
         </a>
         <button
           class="navbar-toggler"
@@ -22,12 +22,12 @@ function menu () {
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">
-                Home
+                Funcion 2
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                Link
+                Funcion 3
               </a>
             </li>
             <li class="nav-item dropdown">
@@ -39,17 +39,17 @@ function menu () {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown
+                Funcion 4
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
                   <a class="dropdown-item" href="#">
-                    Action
+                   Accion
                   </a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">
-                    Another action
+                    Anotar Accion
                   </a>
                 </li>
                 <li>
@@ -57,7 +57,7 @@ function menu () {
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">
-                    Something else here
+                    Algo mas
                   </a>
                 </li>
               </ul>
@@ -69,7 +69,7 @@ function menu () {
                 tabindex="-1"
                 aria-disabled="true"
               >
-                Disabled
+                Funcion 5
               </a>
             </li>
           </ul>
@@ -87,8 +87,7 @@ function menu () {
         </div>
       </div>
     </nav>
-        
-    )
+  );
 }
 
-export default menu;
+export default Menu;

@@ -2,12 +2,12 @@
 
 //import Principal from './Principal';
 //import FormDatos from './components/FormDatos';
-import home from "./pages/home";
+import Home from './pages/Home';
 
 function App() {
   return (
     <div className="container">
-     <home/>
+    <Home></Home>
     </div>
   );
 }
