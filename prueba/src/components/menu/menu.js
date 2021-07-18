@@ -1,12 +1,14 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
+import Registro from "../Registro/Registro/Registro";
 
 function Menu() {
   return (
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <Link class="navbar-brand" to="/">
           Bos Taurus App
-        </a>
+        </Link>
         <button
           class="navbar-toggler"
           type="button"
@@ -21,69 +23,24 @@ function Menu() {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
-                Funcion 2
-              </a>
+              <Link class="nav-link active" aria-current="page" to="/">
+                INICIO
+              </Link>
+            </li>
+
+            <li class="nav-item">
+              <Link class="nav-link" to="/nose">
+                CONOCENOS
+              </Link>
+
+             
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
-                Funcion 3
-              </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Funcion 4
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item" href="#">
-                   Accion
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    Anotar Accion
-                  </a>
-                </li>
-                <li>
-                  <hr class="dropdown-divider"></hr>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    Algo mas
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link disabled"
-                href="#"
-                tabindex="-1"
-                aria-disabled="true"
-              >
-                Funcion 5
-              </a>
-            </li>
+                <Link class="nav-link" to="/Registro">
+                  REGISTRO
+                </Link>
+              </li>
           </ul>
-          <form class="d-flex">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            ></input>
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
         </div>
       </div>
     </nav>
