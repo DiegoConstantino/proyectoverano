@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Nose from '../paginas/Nose';
 import Menu from '../components/menu/Menu';
 import Home from '../paginas/Home'
-import Registro from '../components/Registro/Registro/Registro';
+import FormDatos from '../components/FormDatos';
+
 
 
 
@@ -16,7 +17,8 @@ function Aruta() {
 <Switch>
     <Route path="/Nose" exact component={Nose}/>
     <Route path="/" exact component={Home}/>
-    <Route path="/Registro" exact component={Registro}/>
+    <Route path="/Formulario" exact component={FormDatos}/>
+    
    
     
     

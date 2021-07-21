@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Registro from "../Registro/Registro/Registro";
+
+
 
 function Menu() {
   return (
@@ -36,7 +37,7 @@ function Menu() {
              
             </li>
             <li class="nav-item">
-                <Link class="nav-link" to="/Registro">
+                <Link class="nav-link" to="/Formulario">
                   REGISTRO
                 </Link>
               </li>
