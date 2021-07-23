@@ -1,9 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
-
+import { useAuth0 } from "@auth0/auth0-react";
+import Login from "../Login";
+import Logout from "../Logout"
 
 function Menu() {
+  const { isAuthenticated, isLoading } = useAuth0();
+  if (isLoading) {
+    return <div>Loading ...</div>;
+  }
   return (
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
@@ -33,14 +38,28 @@ function Menu() {
               <Link class="nav-link" to="/nose">
                 CONOCENOS
               </Link>
-
-             
             </li>
-            <li class="nav-item">
-                <Link class="nav-link" to="/Formulario">
-                  REGISTRO
-                </Link>
+            
+            {isAuthenticated ? (
+              <>
+              <li class="nav-item">
+              <Link class="nav-link" to="/Formulario">
+                REGISTRO
+              </Link>
+            </li>
+                <li class="nav-item">
+                  <p>
+                   <Logout></Logout>
+                  </p>
+                </li>
+              </>
+            ) : (
+              <li class="nav-item">
+                <p>
+                  <Login></Login>
+                </p>
               </li>
+            )}
           </ul>
         </div>
       </div>

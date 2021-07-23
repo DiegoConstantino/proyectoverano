@@ -1,18 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css'; 
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import { Auth0Provider } from '@auth0/auth0-react';
 
-import App from './App';
+import App from "./App";
 //import Principal from './Principal';
-import reportWebVitals from './reportWebVitals';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import reportWebVitals from "./reportWebVitals";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App/>
+    <Auth0Provider
+      domain="dev-31ycemug.us.auth0.com"
+      clientId="1sGKAC1VCAHFX0mNGqET0bod5a1Jzorz"
+      redirectUri={window.location.origin}
+    >
+      <App />
+    </Auth0Provider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
